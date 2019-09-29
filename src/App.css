@@ -1,22 +1,98 @@
-.App {
+.app {
+  margin: 3em auto;
+  width: 90%;
+}
+
+.gif-item {
+  box-shadow: 2px 2px 4px 0 #ccc;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 0 1.5em;
+  padding: 1em;
+  width: 100%;
+}
+
+.gif-item img {
+  width: 100%;
+}
+
+.gif-list {
+  column-gap: 1.5em;
+  font-size: .85em;
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+input {
+  display: block;
+  font-size: 22px;
+  height: 50px;
+  margin: 0 auto;
   text-align: center;
+  width: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
+@media only screen and (min-width: 400px) {
+  .gif-list {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2;
+  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (min-width: 700px) {
+  .gif-list {
+      -moz-column-count: 3;
+      -webkit-column-count: 3;
+      column-count: 3;
+  }
 }
 
-.App-link {
-  color: #09d3ac;
+@media only screen and (min-width: 900px) {
+  .gif-list {
+      -moz-column-count: 4;
+      -webkit-column-count: 4;
+      column-count: 4;
+  }
 }
+
+@media only screen and (min-width: 1100px) {
+  .gif-list {
+      -moz-column-count: 5;
+      -webkit-column-count: 5;
+      column-count: 5;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .app {
+      width: 1140px;
+  }
+}
+
+
+
+button {
+  margin: 30px;
+  font-size: 18px;
+  height: 65px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+  /* position: absolute; */
+  top: 98%;
+  left: 50%;
+  left:500;
+  bottom:0;
+  display: block;
+  margin: auto;
+
+  box-shadow: 1px 1px 0px 2px rgba (0,0,0,0.3);
+  background: rgb(141,217,252);
+   cursor: pointer;
+ }
+  
+ 
+ .yellow {
+   background: yellow;
+ }
